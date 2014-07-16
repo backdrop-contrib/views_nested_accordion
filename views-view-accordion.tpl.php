@@ -14,7 +14,7 @@
  *
  * The current div wraping each row gets two css classes, which should be
  * enough for most cases:
-    *     "views-accordion-item"
+ *     "views-accordion-item"
  *      and a unique per row class like item-0
  */
 

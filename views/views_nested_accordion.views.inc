@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Plugin file for Views Nested Accordion module
+ * Plugin file for Views Nested Accordion module.
  */
 
 /**
@@ -14,7 +14,7 @@ function views_nested_accordion_views_plugins() {
       'views_nested_accordion' => array(
         'title' => t('Views nested Accordion'),
         'theme' => 'views_view_accordion',
-          'parent' => 'views_accordion',
+        'parent' => 'views_accordion',
         'help' => t('Display Nested Accordion.'),
         'handler' => 'views_nested_accordion_style_plugin',
         'uses row plugin' => TRUE,

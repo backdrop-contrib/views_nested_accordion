@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Views plugin handler. Contains all relevant options and related logic. Implements the Views Form API.
+ * Views plugin handler. Contains all relevant options and related logic.
  */
 
 /**
@@ -40,8 +40,6 @@ class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
     parent::pre_render($result);
   }
 
-  
-  
   /**
    * Render the display in this style.
    */
