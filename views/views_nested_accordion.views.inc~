@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Plugin file for VBO Hide module
+ */
+
+/**
+ * Implements hook_views_plugin().
+ */
+function views_nested_accordion_views_plugins() {
+  return array(
+    'display_extender' => array(
+      'vbo_hide' => array(
+        'title' => t('Nested Accordion'),
+        'help' => t('Implement Accordion on all group header.'),
+        'path' => drupal_get_path('module', 'views_nested_accordion') . '/views',
+        'handler' => 'views_nested_accordion_plugin_display_extender',
+      ),
+    ),
+  );
+}
