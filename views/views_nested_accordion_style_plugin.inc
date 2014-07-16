@@ -55,4 +55,3 @@ class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
     return $output;
   }
 }
-
