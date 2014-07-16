@@ -17,7 +17,7 @@
     *     "views-accordion-item"
  *      and a unique per row class like item-0
  */
-//echo "<pre>";print_r($use_group_header);die;
+
 ?>
 <?php if (!empty($title)): ?>
   <h3 class="<?php print $view_accordion_id; ?>">
