@@ -29,8 +29,8 @@
   The first field WILL be used as the header for each accordion section, all
   others will be displayed when the header is clicked. The module creates an
   accordion section per row of results from the view. If the first field 
-  includes a link, this link will not function, (the js returns false) Nothing will break
-  though.
+  includes a link, this link will not function, (the js returns false) Nothing 
+  will break though.
 
 -- CONFIGURATION --
   To implement nested accordion the option "Nested Accordion" should be checked.
