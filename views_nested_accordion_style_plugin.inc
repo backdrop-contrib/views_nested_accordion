@@ -7,7 +7,7 @@
 /**
  * Extends View Accordion Style Plugin.
  */
-class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
+class Views_Nested_Accordion_Style_Plugin extends views_accordion_style_plugin {
   /**
    * Returns setting options.
    */
