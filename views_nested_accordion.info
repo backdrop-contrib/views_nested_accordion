@@ -5,8 +5,7 @@ core = 7.x
 dependencies[] = views
 dependencies[] = views_accordion
 
-files[] = views/views_nested_accordion.views.inc
-files[] = views/views_nested_accordion_style_plugin.inc
+files[] = views_nested_accordion_style_plugin.inc
 
 ; Information added by Drupal.org packaging script on 2014-07-09
 version = "7.x-1.0"
