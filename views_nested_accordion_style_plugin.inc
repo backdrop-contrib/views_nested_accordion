@@ -28,7 +28,7 @@ class Views_Nested_Accordion_Style_Plugin extends views_accordion_style_plugin {
       '#type' => 'checkbox',
       '#title' => t('Nested Accordion'),
       '#default_value' => $this->options['nestedaccordion'],
-      '#description' => t("If set, nested accordion will be implemented."),
+      '#description' => t('If set, nested accordion will be implemented.'),
       '#weight' => -1,
     );
   }
@@ -47,7 +47,7 @@ class Views_Nested_Accordion_Style_Plugin extends views_accordion_style_plugin {
     $output = parent::render();
     $view_settings['viewname'] = $this->view->name;
     $view_settings['nestedaccordion'] = $this->options['nestedaccordion'];
-    if ($this->options['nestedaccordion'] == '1') {
+    if ($this->options['nestedaccordion'] == TRUE) {
       drupal_add_js(drupal_get_path('module', 'views_nested_accordion') . '/js/views-nested-accordion.js');
       drupal_add_css(drupal_get_path('module', 'views_nested_accordion') . '/css/views-nested-accordion.css');
     }
