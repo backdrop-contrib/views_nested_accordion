@@ -16,7 +16,7 @@ function views_nested_accordion_views_plugins() {
         'theme' => 'views_view_accordion',
         'parent' => 'views_accordion',
         'help' => t('Display Nested Accordion.'),
-        'handler' => 'Views_Nested_Accordion_Style_Plugin',
+        'handler' => 'views_nested_accordion_style_plugin',
         'uses row plugin' => TRUE,
         'uses row class' => TRUE,
         'uses options' => TRUE,
