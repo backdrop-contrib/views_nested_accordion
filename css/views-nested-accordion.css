@@ -3,7 +3,7 @@
  * In the header, with field grouping the float must be cleared.
 */
 .ui-accordion h3.ui-accordion-header {
-  //overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 /*
