@@ -1,22 +1,26 @@
 
--- Introduction --
+Introduction
+------------
 
   Views Nested Accordion help in creating nested Accordion. If accordion is 
   grouped by more then one field then each header will act as accordion for its 
   inner elelment.
 
--- REQUIREMENTS --
+REQUIREMENTS
+------------
 
   * Views Module
   * Views UI Module
   * Views Accordion
 
 
--- INSTALLATION --
+INSTALLATION
+------------
 
   * Install as usual, see http://drupal.org/node/70151 for further information.
 
--- USING VIEWS NESTED ACCORDION MODULE --
+USING VIEWS NESTED ACCORDION MODULE
+-----------------------------------
 
   Your view must meet the following requirements:
   * Row style must be set to Fields
@@ -32,7 +36,8 @@
   includes a link, this link will not function, (the js returns false) Nothing 
   will break though.
 
--- CONFIGURATION --
+CONFIGURATION
+-------------
   To implement nested accordion the option "Nested Accordion" should be checked.
   When more then one field grouping is done then nested Accordion will be 
   implemented.
