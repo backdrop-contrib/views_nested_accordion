@@ -1,5 +1,5 @@
 
--- SUMMARY --
+-- Introduction --
 
   Views Nested Accordion help in creating nested Accordion. If accordion is 
   grouped by more then one field then each header will act as accordion for its 
@@ -20,14 +20,14 @@
 
   Your view must meet the following requirements:
   * Row style must be set to Fields
-  * Provide at least two fields to show.
+  * Provide at least three fields to show.
 
   Choose Views Nested Accordion in the Style dialog within your view, which 
   will prompt you to configure the Nested Accordion.
 
   *        IMPORTANT       *
-  The first field WILL be used as the header for each accordion section, all
-  others will be displayed when the header is clicked. The module creates an
+  Each grouped field will be used as the header for each accordion section, when
+  header is clicked then inner fields will be displayed. The module creates an
   accordion section per row of results from the view. If the first field 
   includes a link, this link will not function, (the js returns false) Nothing 
   will break though.
