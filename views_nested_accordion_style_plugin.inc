@@ -34,13 +34,6 @@ class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
   }
 
   /**
-   * Pre_render() necessary to prevent markup mayhem.
-   */
-  public function pre_render($result) {
-    parent::pre_render($result);
-  }
-
-  /**
    * Render the display in this style.
    */
   public function render() {
