@@ -17,9 +17,7 @@ Drupal.behaviors.views_nested_accordion = {
           /* Generate Accordion Effect on Outer Header Click */
           $('.view-id-' + viewname + ' .view-grouping .view-grouping-header').click(function() {
 
-                  var attrib = $(this).attr("class");
-                  var remove = attrib.split(" ");
-                  if (remove[1] == 'nested-accordion') {
+                  if($(this).hasClass("nested-accordion")) {
                     /* If Accordion is Open, then Clicking on it will close the Accordion. */
                     $(this).removeClass("nested-accordion");
                     $(this).siblings('.view-grouping-content').slideUp();
