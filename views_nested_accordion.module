@@ -1,16 +1,36 @@
 <?php
-
 /**
  * @file
  * Module file for Nested Accordion module.
  */
 
 /**
- * Implements hook_views_api().
+ * Implementation of hook_autoload_info().
  */
-function views_nested_accordion_views_api() {
+function views_nested_accordion_autoload_info() {
   return array(
-    'api' => 3,
-    'path' => drupal_get_path('module', 'views_nested_accordion'),
+    'views_nested_accordion_style_plugin' => 'includes/views_nested_accordion_style_plugin.inc',
+  );
+}
+
+/**
+ * Implements hook_views_plugin().
+ */
+function views_nested_accordion_views_plugins() {
+  return array(
+    'style' => array(
+      'views_nested_accordion' => array(
+        'title' => t('Views nested Accordion'),
+        'theme' => 'views_view_accordion',
+        'parent' => 'views_accordion',
+        'help' => t('Display JQuery accordion, within a JQuery accordion. Requires grouping.'),
+        'handler' => 'views_nested_accordion_style_plugin',
+        'uses row plugin' => TRUE,
+        'uses row class' => TRUE,
+        'uses options' => TRUE,
+        'uses fields' => TRUE,
+        'type' => 'normal',
+      ),
+    ),
   );
 }

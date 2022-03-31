@@ -28,7 +28,7 @@ class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
       '#type' => 'checkbox',
       '#title' => t('Nested Accordion'),
       '#default_value' => $this->options['nestedaccordion'],
-      '#description' => t('If set, nested accordion will be implemented.'),
+      '#description' => t('If set, nested accordion will be implemented when there are multiple levels of grouping.'),
       '#weight' => -1,
     );
   }
@@ -41,10 +41,10 @@ class views_nested_accordion_style_plugin extends views_accordion_style_plugin {
     $view_settings['viewname'] = $this->view->name;
     $view_settings['nestedaccordion'] = $this->options['nestedaccordion'];
     if ($this->options['nestedaccordion'] == TRUE) {
-      drupal_add_js(drupal_get_path('module', 'views_nested_accordion') . '/js/views-nested-accordion.js');
-      drupal_add_css(drupal_get_path('module', 'views_nested_accordion') . '/css/views-nested-accordion.css');
+      backdrop_add_js(drupal_get_path('module', 'views_nested_accordion') . '/js/views-nested-accordion.js');
+      backdrop_add_css(drupal_get_path('module', 'views_nested_accordion') . '/css/views-nested-accordion.css');
     }
-    drupal_add_js(array('views_nested_accordion' => array('nestedaccordion' => $view_settings)), 'setting');
+    backdrop_add_js(array('views_nested_accordion' => array('nestedaccordion' => $view_settings)), 'setting');
     return $output;
   }
 }
