@@ -31,7 +31,7 @@
   display: none;
 }
 
-.view-grouping:first-child .view-grouping-content {
+.view-grouping:only-child .view-grouping-content {
   display: block;
 }
 

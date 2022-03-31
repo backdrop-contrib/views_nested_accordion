@@ -13,7 +13,7 @@ Drupal.behaviors.views_nested_accordion = {
           /* Our Nested Accordion Settings */
           var viewname = this.viewname;
           /* Add Class to the Group Header On Page Load */
-          $('.view-id-' + viewname + ' .view-grouping:first-child .view-grouping-header', context).addClass('nested-accordion');
+          $('.view-id-' + viewname + ' .view-grouping:only-child .view-grouping-header', context).addClass('nested-accordion');
           /* Generate Accordion Effect on Outer Header Click */
           $('.view-id-' + viewname + ' .view-grouping .view-grouping-header', context).click(function() {
 
